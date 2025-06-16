@@ -1,15 +1,19 @@
 require("dotenv/config");
 
+const { Pool } = require("pg");
+
 const pgConnection = {
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_DATABASE,
-  password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT,
+  user: process.env.DB_USER || "127.0.0.1",
+  host: process.env.DB_HOST || "localhost",
+  database: process.env.DB_DATABASE || "db_restaurant",
+  password: process.env.DB_PASSWORD || "Dragonking7",
+  port: process.env.DB_PORT || 5432,
   ssl: {
     sslmode: "require",
     rejectUnauthorized: false,
   },
 };
 
-module.exports = { pgConnection };
+const pool = new Pool(pgConnection);
+
+(module.exports = pool), { pgConnection };

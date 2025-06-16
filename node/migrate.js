@@ -67,13 +67,13 @@ const runSeeders = async () => {
 
   console.log(`\x1b[32mSeeder Executed: 5_table_seeder.sql`);
 
-  // const seederFuncPath = join(
-  //   "config/migrations",
-  //   "6_helper_seeder_function.sql"
-  // );
-  // await client.query(readFileSync(seederFuncPath, "utf-8"));
+  const seederFuncPath = join(
+    "config/migrations",
+    "6_helper_seeder_function.sql"
+  );
+  await client.query(readFileSync(seederFuncPath, "utf-8"));
 
-  // console.log(`\x1b[32mSeeder Executed: 6_helper_seeder_function.sql`);
+  console.log(`\x1b[32mSeeder Executed: 6_helper_seeder_function.sql`);
 
   console.log(`\x1b[32m=============================`);
   console.log(`\x1b[32mSeeder Finished`);

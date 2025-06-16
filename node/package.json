@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "migrate": "node migrate.js"
+    "migrate": "node migrate.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -14,6 +16,7 @@
     "helmet": "^8.1.0",
     "nodemon": "^3.1.10",
     "pg": "^8.16.0",
+    "winston": "^2.4.3",
     "xss-clean": "^0.1.4"
   }
 }
