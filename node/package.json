@@ -1,0 +1,19 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "migrate": "node migrate.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-useragent": "^1.0.15",
+    "helmet": "^8.1.0",
+    "nodemon": "^3.1.10",
+    "pg": "^8.16.0",
+    "xss-clean": "^0.1.4"
+  }
+}
