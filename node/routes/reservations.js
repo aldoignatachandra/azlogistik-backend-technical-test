@@ -16,9 +16,7 @@ router.post("/allocate-table", async (req, res) => {
   } = req.body;
 
   const start = `${requested_date} ${requested_time}`;
-  const end = new Date(
-    new Date(start).getTime() + duration_minutes * 60000
-  ).toISOString();
+  const end = new Date(new Date(start).getTime() + duration_minutes * 60000).toISOString();
 
   // Find Available Table
   const table = await allocate({
