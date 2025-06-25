@@ -304,3 +304,10 @@ To test the API endpoints:
    php -S localhost:8000 -t .
    ```
    Then navigate to: http://localhost:8000/report/top-customers.php?start_date=2023-01-01&end_date=2023-12-31
+
+## 👨‍💻 Author
+
+Created with 💻 by Ignata
+
+- 📂 GitHub: [Aldo Ignata Chandra](https://github.com/aldoignatachandra)
+- 💼 LinkedIn: [Aldo Ignata Chandra](https://linkedin.com/in/aldoignatachandra)
