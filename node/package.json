@@ -14,6 +14,7 @@
     "express": "^5.1.0",
     "express-useragent": "^1.0.15",
     "helmet": "^8.1.0",
+    "luxon": "^3.6.1",
     "nodemon": "^3.1.10",
     "pg": "^8.16.0",
     "winston": "^2.4.3",
