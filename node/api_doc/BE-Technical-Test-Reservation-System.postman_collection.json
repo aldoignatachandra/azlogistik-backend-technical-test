@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "d75b07c6-ae3f-4aac-b2c0-58957ce9cdf3",
+		"name": "BE-Technical-Test-Reservation-System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9117244"
+	},
+	"item": [
+		{
+			"name": "table-allocation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": 5,\n    \"party_size\": 4,\n    \"requested_date\": \"2025-06-27\",\n    \"requested_time\": \"11:00\",\n    \"duration_minutes\": 120\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/reservation/allocate-table",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reservation",
+						"allocate-table"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check-reservation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"table_id\": 1,\n    \"start_time\": \"2025-06-27 11:00:00\",\n    \"end_time\": \"2025-06-27 13:00:00\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/reservation/check",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reservation",
+						"check"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
